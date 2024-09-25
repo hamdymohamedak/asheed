@@ -1,0 +1,360 @@
+.Home_Parent {
+  background-color: #010625;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+.bgdiv {
+  height: 38rem;
+  width: 43rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  overflow: hidden;
+}
+.bgdiv :nth-child(n) {
+  height: 20rem;
+  width: 16rem;
+  border-radius: 0px 1px 50% 50%;
+}
+
+.boxImg {
+  object-fit: cover;
+}
+
+.titleParent {
+  width: 60rem;
+  height: 41rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 32rem;
+}
+.btn {
+  height: 3rem;
+  width: 12rem;
+  border-radius: 11px;
+  border: none;
+  margin: 1rem;
+  box-shadow: 1px 2px 21px 3px black;
+  font-weight: bold;
+  font-size: 1rem;
+  filter: invert(1);
+}
+.btn:hover {
+  scale: 1.1;
+}
+
+.whoiam {
+  width: 40rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.messageBtn {
+  background: red;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  filter: invert(1);
+  cursor: pointer;
+  z-index: 9999;
+}
+.messageBtn:hover {
+  scale: 1.1;
+}
+
+.alertSocial {
+  background: black;
+  height: 15rem;
+  position: fixed;
+  bottom: 0;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  bottom: 16%;
+  right: 1%;
+  z-index: 9999;
+}
+i {
+  cursor: pointer;
+}
+
+@media (max-width: 1229px) {
+  .bgdiv {
+    height: 38rem;
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1156px) {
+  .container {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgdiv :nth-child(n) {
+    height: 20rem;
+    width: 100%;
+    border-radius: 0px 0px 0% 0%;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .bgdiv {
+    flex-wrap: wrap;
+    min-height: 55rem;
+  }
+  .bgdiv :nth-child(n) {
+    height: 25rem;
+    width: 34rem;
+    border-radius: 0px 0px 0% 0%;
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .whoiam {
+    width: auto;
+  }
+}
+
+.secound_sec {
+  background-color: #010625;
+  color: white;
+}
+.secound_sec_container {
+  padding: 78px;
+  min-height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cube {
+  height: 30rem;
+  width: 54rem;
+  background: blue;
+  border-radius: 11px;
+  background: url(../../assets/1-1.png);
+  background-size: cover;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.secound_sec_list {
+  height: 30rem;
+  width: 45rem;
+  padding: 1rem;
+  position: relative;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+}
+.secound_sec_list::before {
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  width: 20%;
+  left: 2%;
+  top: 48px;
+  background: white;
+}
+.secound_sec_list :nth-child(n) {
+  padding-top: 1rem;
+}
+
+.Services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50vh;
+}
+.Services .card {
+  border: 1px solid blue;
+  height: 15rem;
+  width: 22rem;
+  border-radius: 11px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.6rem;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.card:hover {
+  border: none;
+  filter: drop-shadow(0px 0px 5px black);
+}
+.Services #card1::before {
+  content: "";
+  position: absolute;
+  background: red;
+  height: 100%;
+  width: 100%;
+  translate: 13% -20%;
+  border-radius: 10px;
+  background: url(../../assets/17.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Services #card2::before {
+  content: "";
+  position: absolute;
+  background: red;
+  height: 100%;
+  width: 100%;
+  translate: 13% -20%;
+  border-radius: 10px;
+  background: url(../../assets/13-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Services #card3::before {
+  content: "";
+  position: absolute;
+  background: red;
+  height: 100%;
+  width: 100%;
+  translate: 13% -20%;
+  border-radius: 10px;
+  background: url(../../assets/2-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Services .card::before {
+  transition: transform 0.3s ease;
+  transform: translate(12%, -11%);
+}
+
+.Services .card:hover::before {
+  transform: translate(0%, 0%);
+  transition: transform 0.3s ease;
+}
+
+.Services .card::before {
+  transition-delay: 0.3s;
+}
+
+.icon {
+  height: 4rem;
+  /* background: red; */
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.ourWork {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 3rem;
+}
+
+.companys {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: 20rem;
+  margin-top: 2rem;
+}
+.companyImg {
+  height: 10rem;
+  width: 10rem;
+  filter: invert(1);
+}
+
+@media (max-width: 425px) {
+  .Services {
+    flex-wrap: wrap;
+  }
+  .Services .card {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .Services #card1::before,
+  .Services #card2::before,
+  .Services #card3::before {
+    translate: 2% -22%;
+  }
+  .Home_Parent {
+    clip-path: none;
+  }
+  .secound_sec_container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .secound_sec_list::before {
+    display: none;
+  }
+  .companys {
+    grid-template-columns: auto auto;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .Services {
+    flex-wrap: wrap;
+  }
+  .Services .card {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 780px) and (max-width: 1318px) {
+  .Services {
+    flex-wrap: wrap;
+  }
+  .Services .card {
+    margin: 3rem;
+  }
+}
+
+.sliderCards {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20rem;
+  display: flex;
+  gap: 1rem;
+}
