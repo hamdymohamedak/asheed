@@ -28,7 +28,6 @@ export default function NavBar() {
         <li onClick={()=>{navigate("/Services")}}>خدماتنا</li>
         <li onClick={()=>{navigate("/OurWork")}}>أعمالنا</li>
         <li onClick={()=>{navigate("/Who")}}>من نحن</li>
-        <li>مقالاتنا</li>
         <li>التوظيف</li>
       </ul>
 
@@ -38,7 +37,6 @@ export default function NavBar() {
       <li onClick={()=>{navigate("/Services")}}>خدماتنا</li>
       <li onClick={()=>{navigate("/OurWork")}}>أعمالنا</li>
       <li onClick={()=>{navigate("/Who")}}>من نحن</li>
-      <li>مقالاتنا</li>
       <li>التوظيف</li>
       </ul>
     </div>

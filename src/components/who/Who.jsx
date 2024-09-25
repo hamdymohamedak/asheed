@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../../assets/1-1.png";
 import img2 from "../../assets/16.png";
-import "../Home/Home.css"
+import "../Home/Home.css";
 
 import { RoseBox, SideText, ShinyButton, ShinyText } from "larose-js";
 export default function Who() {
@@ -13,7 +13,12 @@ export default function Who() {
             <h1 className="title">من لا شيء ...حتى كل شي </h1>
           </SideText>
           <SideText>
-            <ShinyButton RoseName={"btn"}>
+            <ShinyButton
+              ShinyButtonEvent={() => {
+                window.open("https://wa.me/966582226234");
+              }}
+              RoseName={"btn"}
+            >
               <ShinyText edit={{ color: "white" }}>تواصل معنا</ShinyText>
             </ShinyButton>
           </SideText>
